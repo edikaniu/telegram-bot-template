@@ -1,0 +1,67 @@
+{
+  "name": "telegram-bot-template",
+  "version": "1.0.0",
+  "description": "A feature-rich, customizable Telegram bot template with AI integration, scheduling, admin management, and more. Perfect for building production-ready Telegram bots quickly.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "init": "node scripts/init.js",
+    "install-browser": "npx playwright install chromium",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "echo 'Add your linter here (eslint, etc.)'",
+    "format": "echo 'Add your formatter here (prettier, etc.)'"
+  },
+  "keywords": [
+    "telegram",
+    "telegram-bot",
+    "bot-template",
+    "telegraf",
+    "chatbot",
+    "ai-bot",
+    "node-telegram-bot",
+    "typescript",
+    "bot-framework",
+    "claude-ai",
+    "telegram-bot-api"
+  ],
+  "author": "Edikan Udoibuot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edikaniu/telegram-bot-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edikaniu/telegram-bot-template/issues"
+  },
+  "homepage": "https://github.com/edikaniu/telegram-bot-template#readme",
+  "engines": {
+    "node": ">=20.18.0",
+    "npm": ">=10.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0",
+    "@types/express": "^5.0.3",
+    "axios": "^1.12.2",
+    "axios-retry": "^4.5.0",
+    "cheerio": "^1.1.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "node-cron": "^4.2.1",
+    "playwright": "^1.55.1",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.6.1",
+    "@types/node-cron": "^3.0.11",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.10",
+    "ts-jest": "^29.4.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

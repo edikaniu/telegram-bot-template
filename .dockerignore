@@ -1,0 +1,33 @@
+# Don't copy these to Docker image
+node_modules/
+npm-debug.log*
+.env
+.env.local
+.git/
+.gitignore
+README.md
+.vscode/
+.idea/
+.claude/
+*.log
+data/
+backups/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Debug files
+*.broken
+*.backup
+debug-*.ts
+check-*.ts
+inspect-*.ts
+*.html
+*.png
+scheduler_news_fix.txt
+url_helpers.txt
+*.tmp
+
+# Keep dist/ - it will be built during the build phase
+# dist/ is commented out so it's included if it exists

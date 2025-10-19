@@ -1,0 +1,17 @@
+# Nixpacks Configuration for Railway.app
+# This file configures the build process for deploying the Nigerian Investment Telegram Bot
+
+[phases.setup]
+nixPkgs = ['nodejs_20', 'chromium']
+
+[phases.install]
+cmds = ['npm install']
+
+[phases.build]
+cmds = [
+  'npm run build',
+  'npx playwright install chromium --with-deps'
+]
+
+[start]
+cmd = 'npm start'

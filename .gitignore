@@ -1,0 +1,134 @@
+# ========================================
+# Telegram Bot Template - Git Ignore
+# ========================================
+
+# -----------------------
+# SENSITIVE DATA (CRITICAL - NEVER COMMIT!)
+# -----------------------
+# Environment variables containing API keys and secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+
+# Bot data and user information
+data/
+backups/
+*.db
+*.sqlite
+*.sqlite3
+
+# Admin configuration files (may contain user IDs)
+admin-config.json
+blocked-users.json
+
+# -----------------------
+# DEPENDENCIES
+# -----------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json.backup
+
+# -----------------------
+# BUILD OUTPUTS
+# -----------------------
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# -----------------------
+# LOGS
+# -----------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# -----------------------
+# IDE & EDITOR FILES
+# -----------------------
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.settings/
+.DS_Store
+
+# -----------------------
+# OS GENERATED FILES
+# -----------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# -----------------------
+# TESTING & COVERAGE
+# -----------------------
+coverage/
+.nyc_output/
+*.lcov
+.jest-cache/
+
+# -----------------------
+# TEMPORARY & DEBUG FILES
+# -----------------------
+*.tmp
+*.temp
+*.bak
+*.backup
+*.broken
+debug-*.ts
+check-*.ts
+inspect-*.ts
+test-*.html
+*.png
+*.jpg
+*.jpeg
+*.gif
+scheduler_news_fix.txt
+url_helpers.txt
+
+# -----------------------
+# PLAYWRIGHT BROWSERS
+# -----------------------
+# Playwright downloads browsers to ~/.cache/ms-playwright
+# If you store them locally, ignore them
+playwright/.cache/
+.playwright/
+
+# -----------------------
+# RUNTIME DATA
+# -----------------------
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# -----------------------
+# MISC
+# -----------------------
+.cache/
+.temp/
+.terraform/
+*.tfstate
+*.tfstate.backup
